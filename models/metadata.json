@@ -1,0 +1,57 @@
+{
+  "accuracy": 87.12,
+  "precision": 86.79,
+  "recall": 86.56,
+  "f1": 86.68,
+  "auc": 95.61,
+  "cv_mean": 88.12,
+  "cv_std": 0.51,
+  "confusion_matrix": [
+    [
+      1086,
+      153
+    ],
+    [
+      156,
+      1005
+    ]
+  ],
+  "feature_importances": [
+    0.033450325048653994,
+    0.0576876951628064,
+    0.02408135655445096,
+    0.1765247991336703,
+    0.31359635224460586,
+    0.24351710706024898,
+    0.15114236479556334
+  ],
+  "feature_names": [
+    "category",
+    "duration",
+    "upload_time",
+    "hook",
+    "retention",
+    "engagement",
+    "trending"
+  ],
+  "categories": [
+    "Gaming",
+    "Education",
+    "Entertainment",
+    "Tech",
+    "Vlog",
+    "Music",
+    "Sports",
+    "Comedy",
+    "News",
+    "Beauty"
+  ],
+  "upload_times": [
+    "Morning",
+    "Afternoon",
+    "Evening",
+    "Night"
+  ],
+  "n_samples": 12000,
+  "sklearn_version": "1.8.0"
+}
