@@ -31,7 +31,7 @@ def cors(r):
 # ── HOMEPAGE ──────────────────────────────────────────────────────────────
 @app.route('/')
 def index():
-    return send_from_directory('static', 'index.html')
+    return send_from_directory('templates', 'index.html')
 
 # ── OPTIONS preflight (must NOT match /) ──────────────────────────────────
 @app.route('/<path:path>', methods=['OPTIONS'])
