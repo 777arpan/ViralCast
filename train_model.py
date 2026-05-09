@@ -83,7 +83,7 @@ def train():
         X, y, test_size=0.2, random_state=42, stratify=y)
 
     model = RandomForestClassifier(
-        n_estimators=300, max_depth=15, min_samples_split=5,
+        n_estimators=50, max_depth=10, min_samples_split=5,
         min_samples_leaf=2, n_jobs=-1, random_state=42
     )
     print("Training Random Forest (300 trees) …")
