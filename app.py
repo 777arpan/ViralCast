@@ -1,4 +1,3 @@
-"""YouTube Viral Prediction — Flask API (Random Forest only)"""
 from flask import Flask, request, jsonify, send_from_directory
 import numpy as np, pickle, json, os, time, subprocess, sys, sklearn
 
@@ -28,17 +27,15 @@ def cors(r):
     r.headers['Access-Control-Allow-Methods'] = 'GET,POST,OPTIONS'
     return r
 
-# ── HOMEPAGE ──────────────────────────────────────────────────────────────
 @app.route('/')
 def index():
     return send_from_directory('templates', 'index.html')
 
-# ── OPTIONS preflight (must NOT match /) ──────────────────────────────────
 @app.route('/<path:path>', methods=['OPTIONS'])
 def options(path):
     return ('', 204)
 
-# ── API ───────────────────────────────────────────────────────────────────
+
 @app.route('/api/health')
 def health():
     return jsonify({'status': 'ok', 'accuracy': META['accuracy'], 'auc': META['auc']})
