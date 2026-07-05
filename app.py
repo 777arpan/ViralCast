@@ -99,5 +99,5 @@ def _tips(prob, d):
     return tips[:4]
 
 if __name__ == '__main__':
-    print("Starting server → http://localhost:5050")
+    print("Starting the server → http://localhost:5050")
     app.run(debug=True, port=5050, host='0.0.0.0')
