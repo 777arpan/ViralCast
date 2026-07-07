@@ -74,7 +74,7 @@ def predict():
     return jsonify({
         'viral':        bool(pred),
         'probability':  round(prob * 100, 2),
-        'confidence':   round(max(prob, 1-prob) * 100, 2),
+        'confidence':   round(max(prob, 1-prob) * 100,2),
         'latency_ms':   ms,
         'top_features': [{'name': n, 'importance': round(v*100, 2)} for n,v in top],
         'tips':         _tips(prob, d),
