@@ -84,7 +84,7 @@ def _tips(prob, d):
     tips = []
     if float(d.get('hook', 0)) < 0.5:
         tips.append("Strengthen your hook — the first 5 seconds are critical on YouTube.")
-    if float(d.get('retention', 0)) < 0.5:
+    if float(d.get('retention',0)) < 0.5:
         tips.append("Improve audience retention with tighter editing and pattern interrupts.")
     if float(d.get('engagement', 0)) < 5:
         tips.append("Drive engagement with CTAs, polls, and a pinned comment.")
