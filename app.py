@@ -87,7 +87,7 @@ def _tips(prob, d):
     if float(d.get('retention',0)) < 0.5:
         tips.append("Improve audience retention with tighter editing and pattern interrupts.")
     if float(d.get('engagement', 0)) < 5:
-        tips.append("Drive engagement with CTAs, polls, and a pinned comment.")
+        tips.append("Drive engagement with CTAs, polls, and a pinned comments!")
     if not int(d.get('trending', 0)):
         tips.append("Tie content to a trending topic or hashtag to boost discoverability.")
     if float(d.get('duration', 600)) < 420:
